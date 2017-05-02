@@ -1,9 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Thibaut
- * Date: 01/05/2017
- * Time: 01:49
+ * Author: Blue
+ * Version : 0.1
  */
 
-echo "hi !";
+include 'views/header.html';
+include 'views/navbar.html';
+include 'views/homepage.html';
+include 'views/footer.html';
+?>
+
+

@@ -1,9 +1,9 @@
 <!--
 Author : Blue
-Version : 0.1
+Version : 0.2
 -->
 
-<div id="siteContent">
+<div id="homePage">
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">

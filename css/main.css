@@ -1,5 +1,5 @@
 /* Author : Blue
-   Version : 0.1
+   Version : 0.2
 */
 
 html {
@@ -8,7 +8,33 @@ html {
 }
 
 body {
-    background-color: #262626;
+    background-color: #303030;
+}
+
+table.highlight > tbody > tr:hover {
+    color: #1976D2 ;
+}
+
+table {
+    margin-top: 5%;
+}
+
+caption {
+    font-size: 140%;
+    transition: 0.5s;
+    transform: translate3d(0px, -0px, 0px);
+}
+
+caption:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translate3d(2px, -2px, 2px);
+}
+
+td {
+    border: 1px solid #d0d0d0;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #navbarIcon {
@@ -25,10 +51,6 @@ body {
     filter: brightness(65%);
 }
 
-.material-icons {
-    font-size: 30px;
-}
-
 #twitchIcon {
     width: 12%;
     height: auto;
@@ -37,6 +59,10 @@ body {
 #copyright {
     text-align: center;
     vertical-align: middle;
+}
+
+.material-icons {
+    font-size: 30px;
 }
 
 .blueCard {

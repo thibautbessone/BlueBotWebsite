@@ -1,8 +1,11 @@
 /* Author : Blue
- Version : 0.1
+ Version : 0.2
  */
 
 $(document).ready(function () {
+
+    //Homepage
+    $('#commandsPage').hide();
 
     $('.parallax').parallax();
     //On click on menu tab
@@ -14,16 +17,16 @@ $(document).ready(function () {
         //Select the clicked tab
         $(this).addClass('active');
     });
-    
+
     $('#commands').on('click', function () {
-        $('#siteContent').fadeOut('fast', function () {
-            $('#siteContent').load('views/commands.html').fadeIn('fast');
+        $('#homePage').fadeOut(function () {
+            $('#commandsPage').fadeIn();
         });
     });
 
     $('#home').on('click', function () {
-        $('#siteContent').fadeOut('fast', function () {
-            $('#siteContent').load('views/homepage.html').fadeIn('fast');
+        $('#commandsPage').fadeOut( function () {
+            $('#homePage').fadeIn();
         });
     });
 });

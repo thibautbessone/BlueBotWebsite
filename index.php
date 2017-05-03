@@ -6,7 +6,8 @@
 
 include 'views/header.html';
 include 'views/navbar.html';
-include 'views/homepage.html';
+include 'views/homepage.php';
+include 'views/commands.php';
 include 'views/footer.html';
 ?>
 

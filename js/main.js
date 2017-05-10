@@ -1,5 +1,5 @@
 /* Author : Blue
- Version : 0.2
+ Version : 0.3
  */
 
 $(document).ready(function () {
@@ -7,7 +7,6 @@ $(document).ready(function () {
     //Homepage
     $('#commandsPage').hide();
 
-    $('.parallax').parallax();
     //On click on menu tab
     $('#navList li').on('click', function () {
         //Unselect all the tabs

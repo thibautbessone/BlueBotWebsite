@@ -1,13 +1,12 @@
 <!--
 Author : Blue
-Version : 0.2
+Version : 0.3
 -->
 
 <div id="homePage">
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
-
                 <h1 class="header center blue-text text-darken-2">BlueBot</h1>
                 <div class="row center">
                     <h5 class="header col s12 light">A general purpose bot for your Discord server</h5>
@@ -52,6 +51,7 @@ Version : 0.2
                 <div class="col s8 m4">
                     <div class="col s4 m2">
                         <div class="icon-block">
+                            <br>
                             <br>
                             <iframe src="https://discordapp.com/widget?id=268853008455041025&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
                         </div>

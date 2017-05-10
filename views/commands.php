@@ -1,12 +1,11 @@
 <!--
 Author : Blue
-Version : 0.2
+Version : 0.3
 -->
 
 <div id="commandsPage">
     <div class="container">
         <div class="section">
-
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>

@@ -15,8 +15,13 @@ Version : 0.3
                     <a href="https://discordapp.com/oauth2/authorize?client_id=268420199370194944&scope=bot&permissions=-1" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="left" data-delay="25" data-tooltip="Add the bot to your server"><i class="material-icons left">play_for_work</i>Add BlueBot</a>
                     <a href="https://discord.gg/rSekkJv" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="right" data-delay="25" data-tooltip="Join the support server"><i class="material-icons left">forum</i>Join BlueBot server</a>
                 </div>
-                <br><br>
-
+                <div class="row center">
+                    <div class="col s12">
+                        <h5 class="light">Developped by Blue#1377</h5>
+                        <h5 class="light">using the <a id="jdaLink" href="https://github.com/DV8FromTheWorld/JDA">JDA Library</a></h5>
+                        <img id="blueAvatar" src="https://cdn.discordapp.com/avatars/197114678533554179/4dc6a0f0aebbd271b2fb0bc1900e4dee.webp?size=128" alt="Blue#1377">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="parallax"><img id="parallaxBg" src="img/code.png" alt="code background"></div>

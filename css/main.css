@@ -9,6 +9,7 @@ html {
 
 body {
     background-color: #24292e;
+    color: whitesmoke;
 }
 
 table.highlight > tbody > tr:hover {
@@ -45,10 +46,22 @@ td {
     margin-right: 1%;
 }
 
+#jdaLink {
+    color: #1976D2;
+}
+
+#blueAvatar {
+    margin-top: 1%;
+    border-radius: 100%;
+    border: 0.125em solid whitesmoke;
+    width: 8%;
+    height: auto;
+}
+
 #parallaxBg {
     display: block;
     transform: translate3d(-48%, 185px, 0px);
-    filter: brightness(65%);
+    filter: brightness(55%);
 }
 
 #twitchIcon {

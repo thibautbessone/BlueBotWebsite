@@ -17,7 +17,7 @@ Version : 0.3
                 </div>
                 <div class="row center">
                     <div class="col s12">
-                        <h5 class="light">Developped by Blue#1377</h5>
+                        <h5 class="light">Developed by Blue#1377</h5>
                         <h5 class="light">using the <a id="jdaLink" href="https://github.com/DV8FromTheWorld/JDA">JDA Library</a></h5>
                         <img id="blueAvatar" src="https://cdn.discordapp.com/avatars/197114678533554179/4dc6a0f0aebbd271b2fb0bc1900e4dee.webp?size=128" alt="Blue#1377">
                     </div>

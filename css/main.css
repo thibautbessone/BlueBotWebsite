@@ -64,6 +64,10 @@ td {
     filter: brightness(55%);
 }
 
+.parallaxCommands {
+    height: 50%;
+}
+
 #twitchIcon {
     width: 12%;
     height: auto;

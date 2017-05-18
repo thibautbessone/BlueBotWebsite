@@ -44,7 +44,15 @@ td {
 }
 
 #navMobileIcon {
-    transform: translate3d(-4%, 0px, 0px);
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#navMIcon {
+    text-align: center;
 }
 
 #navbarIcon {
@@ -78,7 +86,7 @@ td {
 }
 
 .buttons a{
-    margin-top: 5px;
+    margin-top: 3px;
 }
 #twitchIcon {
     width: 12%;

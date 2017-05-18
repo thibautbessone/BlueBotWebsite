@@ -11,9 +11,10 @@ Version : 0.3
                 <div class="row center">
                     <h5 class="header col s12 light">A general purpose bot for your Discord server</h5>
                 </div>
-                <div class="row center">
-                    <a href="https://discordapp.com/oauth2/authorize?client_id=268420199370194944&scope=bot&permissions=-1" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="left" data-delay="25" data-tooltip="Add the bot to your server"><i class="material-icons left">play_for_work</i>Add BlueBot</a>
-                    <a href="https://discord.gg/rSekkJv" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="right" data-delay="25" data-tooltip="Join the support server"><i class="material-icons left">forum</i>Join BlueBot server</a>
+                <div class="buttons row center">
+                    <a href="https://discordapp.com/oauth2/authorize?client_id=268420199370194944&scope=bot&permissions=-1" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="left" data-delay="1" data-tooltip="Add the bot to your server"><i class="material-icons left">play_for_work</i>Add BlueBot</a>
+                    <a href="https://github.com/thibautbessone/DiscordBlueBot" class="btn-large waves-effect waves-light blue darken-2"><i class="material-icons left">code</i>GitHub</a>
+                    <a href="https://discord.gg/rSekkJv" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="right" data-delay="1" data-tooltip="Join the support server"><i class="material-icons left">forum</i>BlueBot server</a>
                 </div>
                 <div class="row center">
                     <div class="col s12">
@@ -29,7 +30,7 @@ Version : 0.3
     <div class="container">
         <div class="section">
             <div class="row">
-                <div class="col s8 m4">
+                <div class="col s12 m4">
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">group</i><i class="material-icons">perm_identity</i><i class="material-icons">group</i></h2>
                         <h5 class="center">Moderation</h5>
@@ -41,7 +42,7 @@ Version : 0.3
                         <p class="light">BlueBot allows you to know when an user on your server starts streaming. You can simply add the user to the tracked streamers list, and BlueBot will handle the rest.</p>
                     </div>
                 </div>
-                <div class="col s8 m4">
+                <div class="col s12 m4">
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">volume_up</i></h2>
                         <h5 class="center">Customizable soundboard</h5>
@@ -53,7 +54,7 @@ Version : 0.3
                         <p class="light">Get latest Cyanide & Hapiness comics, quickly react to messages, express your surprise ... BlueBot also implements Giphy API to quickly and easily search for Gifs. </p>
                     </div>
                 </div>
-                <div class="col s8 m4">
+                <div class="col s12 m4">
                     <div class="col s4 m2">
                         <div class="icon-block">
                             <br>

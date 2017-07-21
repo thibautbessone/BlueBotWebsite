@@ -6,7 +6,7 @@
 
 $name = $_POST['desired_name'];
 $MAX_SIZE = 500000; //Max size of the file
-$UPLOAD_DIR = '/home/bluebot/soundboard';
+$UPLOAD_DIR = '/home/bluebot/soundboard/';
 $target_file = $UPLOAD_DIR . $name . ".mp3";
 
 //Return object

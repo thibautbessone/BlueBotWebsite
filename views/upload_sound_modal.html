@@ -1,0 +1,37 @@
+<!--
+Author : Blue
+Version : 0.1
+-->
+<!--<a class="waves-effect waves-light btn" href="#sound_modal">Modal</a>-->
+<div id="sound_modal" class="center modal modal-fixed-footer">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Upload a sound to BlueBot soundboard</h4>
+            <p><b>Requirements</b> : short name (15 characters max) without spaces | .mp3 Stereo file | 128 Kb/s bitrate | Max size : 500 Kb</p>
+        </div>
+        <form id="sound_form" action="php/upload_sound.php" method="post" enctype="multipart/form-data">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">create</i>
+                <input id="file_name" name="desired_name" type="text" class="validate" data-length="15" required>
+                <label for="file_name">Desired sound name</label>
+            </div>
+            <div class="file-field input-field">
+                <div class="btn blue darken-2">
+                    <span>Browse </span>
+                    <input name="new_sound" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload your sound">
+                </div>
+            </div>
+            <p>
+                <input type="checkbox" name="agreement" id="upload_checkbox"/>
+                <label for="upload_checkbox">I hereby certify that this file does not contain any personal information or malicious content, and is not intended to cause harm to a person, a company or any kind of organization.</label>
+            </p>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a id="upload_button" class="modal-action waves-effect waves-green btn green darken">Upload</a>
+        <a class="modal-action modal-close waves-effect waves-red btn red darken">Cancel</a>
+    </div>
+</div>

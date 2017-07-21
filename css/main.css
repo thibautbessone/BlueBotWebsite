@@ -81,13 +81,6 @@ td {
     filter: brightness(55%);
 }
 
-.parallaxCommands {
-    height: 50%;
-}
-
-.buttons a{
-    margin-top: 3px;
-}
 #twitchIcon {
     width: 12%;
     height: auto;
@@ -97,6 +90,42 @@ td {
     text-align: center;
     vertical-align: middle;
 }
+
+#sound_modal {
+    background-color: #24292e;
+    width: 40%;
+}
+
+.modal .modal-footer {
+    background-color: #1976D2;
+}
+
+#sound_form {
+    margin: 10% 20% 10% 20%;
+}
+
+.input-field label, .input-field input[type=text]:focus + label, .input-field .prefix.active  {
+    color: #1976D2;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #4CAF50 ;
+    border-bottom: 2px solid #4CAF50 ;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #4CAF50;
+    box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+.parallaxCommands {
+    height: 50%;
+}
+
+.buttons a{
+    margin-top: 3px;
+}
+
 
 .material-icons {
     font-size: 30px;

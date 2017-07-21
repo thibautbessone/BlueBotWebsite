@@ -34,7 +34,7 @@ Version : 0.3
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">group</i><i class="material-icons">perm_identity</i><i class="material-icons">group</i></h2>
                         <h5 class="center">Moderation</h5>
-                        <p class="light">BlueBot includes a lot of moderation features such as delete messages in Bulk, auto-assign a role to an user on join, set a custom prefix ... The related commands are only available to the users with the required permissions.</p>
+                        <p class="light">BlueBot includes a lot of moderation features such as bulk-delete messages, auto-assign a role to an user on join, set a custom prefix, set specific channels for sound or Twitch announcements ... The related commands are only available to the users with the required permissions.</p>
                     </div>
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><img id="twitchIcon" src="img/twitch.png" alt="Twitch Icon"></h2>
@@ -46,7 +46,7 @@ Version : 0.3
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">volume_up</i></h2>
                         <h5 class="center">Customizable soundboard</h5>
-                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can contact me so I can add the sound you want.</p>
+                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only).</p>
                     </div>
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">thumb_up</i></h2>

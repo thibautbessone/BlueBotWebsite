@@ -7,7 +7,8 @@ Version : 0.1
     <div class="modal-content">
         <div class="modal-header">
             <h4>Upload a sound to BlueBot soundboard</h4>
-            <p><b>Requirements</b> : short name (15 characters max) without spaces | .mp3 Stereo file | 128 Kb/s bitrate | Max size : 500 Kb</p>
+            <p><b>Requirements</b> : short name , no spaces | .mp3 Stereo file | 128 Kb/s bitrate | Max size : 500 Kb</p>
+            <p><b>Warning</b> : Some sounds may not work due to Java SPIs</p>
         </div>
         <form id="sound_form" action="php/upload_sound.php" method="post" enctype="multipart/form-data">
             <div class="input-field col s6">
@@ -29,7 +30,6 @@ Version : 0.1
                 <label for="upload_checkbox">I hereby certify that this file does not contain any personal information or malicious content, and is not intended to cause harm to a person, a company or any kind of organization.</label>
             </p>
         </form>
-        <i class="material-icons">warning</i><p>Some sounds may not work due to Java SPIs</p>
     </div>
     <div class="modal-footer">
         <a id="upload_button" class="modal-action waves-effect waves-green btn green darken">Upload</a>

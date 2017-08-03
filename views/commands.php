@@ -25,6 +25,7 @@ Version : 0.3
                     include 'commands/moderation.html';
                     include 'commands/fun.html';
                     include 'commands/misc.html';
+                    include 'commands/owner.html';
                     ?>
                 </div>
             </div>

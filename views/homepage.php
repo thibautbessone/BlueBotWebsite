@@ -20,7 +20,7 @@ Version : 0.3
                     <div class="col s12">
                         <h5 class="light">Developed by <a id="devlink" target="_blank" href="https://dev.bluebot.pw">Blue#1377</a></h5>
                         <h5 class="light">using the <a id="jdaLink" target="_blank" href="https://github.com/DV8FromTheWorld/JDA">JDA Library</a></h5>
-                        <a target="_blank" href="https://dev.bluebot.pw"><img id="blueAvatar" src="https://cdn.discordapp.com/avatars/197114678533554179/4dc6a0f0aebbd271b2fb0bc1900e4dee.webp?size=128" alt="Blue#1377"></a>
+                        <a target="_blank" href="https://dev.bluebot.pw"><img id="blueAvatar" src="img/icon.png" alt="Blue#1377"></a>
                     </div>
                 </div>
             </div>

@@ -4,10 +4,14 @@
  * Version : 0.1
  */
 
-$name = $_POST['desired_name'];
+$name =  filter_var($_POST['desired_name'], FILTER_SANITIZE_STRING);
+$serverId = filter_var($_POST['server_id'], FILTER_SANITIZE_NUMBER_INT);
 $MAX_SIZE = 500000; //Max size of the file
 $UPLOAD_DIR = '/home/bluebot/soundboard/';
-$target_file = $UPLOAD_DIR . $name . ".mp3";
+if (!is_dir($UPLOAD_DIR . "/" . $serverId . "/")) {
+    mkdir($UPLOAD_DIR . "/" . $serverId, 0755);
+}
+$target_file = $UPLOAD_DIR . "/" . $serverId . "/" . $name . ".mp3";
 
 //Return object
 $obj = new stdClass();

@@ -156,6 +156,29 @@ td {
 }
 
 /* Tooltips */
-.backdrop{
+.backdrop {
     background-color: #24292e;
+}
+
+#soundList {
+    margin: auto;
+    padding-top: 2.5%;
+    width: 50%;
+    color: #1976D2;
+    border: none;
+    border-radius: 15px;
+}
+
+.collection-header {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.item {
+    background-color: #1e2124 !important;
+    border-bottom: 1px solid #24292e !important;
+}
+
+#dlIcon {
+    color : #1976D2 !important;
 }

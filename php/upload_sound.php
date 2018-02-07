@@ -43,6 +43,11 @@ if($_FILES['new_sound']['error'] > 0) {
         $obj->message = 'Name too long';
     }
 
+    else if(empty($serverId) | strlen($serverId) != 18) {
+        $obj->success = false;
+        $obj->message = 'Server ID not provided';
+    }
+
     else if (strpos($name, ' ') !== false) {
         $obj->success = false;
         $obj->message = 'Name can\'t contain spaces';

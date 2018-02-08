@@ -43,7 +43,7 @@ if($_FILES['new_sound']['error'] > 0) {
         $obj->message = 'Name too long';
     }
 
-    else if(empty($serverId) || strlen($serverId) != 18) {
+    else if(empty($serverId) || strlen($serverId) < 17 || strlen($serverId) > 18) {
         $obj->success = false;
         $obj->message = 'Server ID not provided';
     }

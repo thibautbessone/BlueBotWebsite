@@ -21,6 +21,7 @@ Version : 0.3
                         <h5 class="light">Developed by <a id="devlink" target="_blank" href="https://dev.bluebot.pw">Blue#1377</a></h5>
                         <h5 class="light">using the <a id="jdaLink" target="_blank" href="https://github.com/DV8FromTheWorld/JDA">JDA Library</a></h5>
                         <a target="_blank" href="https://dev.bluebot.pw"><img id="blueAvatar" src="img/icon.png" alt="Blue#1377"></a>
+                        <a target="_blank" href="https://www.patreon.com/bluebot"><img id="patreon" src="img/patreon.png" alt="Support me on Patreon !"></a>
                     </div>
                 </div>
             </div>
@@ -46,7 +47,8 @@ Version : 0.3
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">volume_up</i></h2>
                         <h5 class="center">Customizable soundboard</h5>
-                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only).</p>
+                        <!--<p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only).</p>-->
+                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. However, you temporarily (at least I hope so) can't upload your own sounds anymore. Join the support server for more info.</p>
                     </div>
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">thumb_up</i></h2>

@@ -70,8 +70,15 @@ td {
 #blueAvatar {
     margin-top: 1%;
     border-radius: 100%;
-    border: 0.125em solid whitesmoke;
+    border: 0.135em solid whitesmoke;
     width: 8%;
+    height: auto;
+}
+
+#patreon {
+    margin-bottom: 1.75%;
+    margin-left: 1%;
+    width: 15%;
     height: auto;
 }
 

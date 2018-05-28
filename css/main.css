@@ -1,5 +1,5 @@
 /* Author : Blue
-   Version : 0.3
+   Version : 0.4
 */
 
 html {
@@ -167,9 +167,12 @@ td {
     background-color: #24292e;
 }
 
+#serverIDInput {
+    text-align: center;
+    padding-top: 1%;
+}
 #soundList {
     margin: auto;
-    padding-top: 2.5%;
     width: 50%;
     color: #1976D2;
     border: none;

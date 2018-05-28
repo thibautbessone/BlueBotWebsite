@@ -1,10 +1,14 @@
 <?php
 /**
  * Author: Blue
- * Version : 0.1
+ * Version : 0.2
  */
-
-$path = "/home/bluebot/soundboard/";
+session_start();
+if($_GET['desiredServer']) {
+    $path = "/home/bluebot/soundboard/" . $_GET['desiredServer'] . "/";
+} else {
+    $path = "/home/bluebot/soundboard/";
+}
 $soundName= $_GET['sound'];
 
 header('Content-Description: File Transfer');

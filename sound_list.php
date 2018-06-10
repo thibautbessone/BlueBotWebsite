@@ -1,7 +1,7 @@
 <?php
 /**
  * Author: Blue
- * Version : 0.3
+ * Version : 0.4
  */
 
 include 'views/header.html';
@@ -13,7 +13,10 @@ if(isset($_GET['desiredServer'])) {
 
 //COMMENT THE @ for invalid path warnings
 $scan = @scandir($directory, SCANDIR_SORT_NONE);
-$scanned_directory = @array_diff($scan, array('..', '.'));
+$scanned_directory = @array_filter(@scandir($directory), function($file) {
+    global $directory;
+    return !is_dir($directory . "/" . $file);
+});
 @sort($scanned_directory, SORT_STRING | SORT_FLAG_CASE);
 ?>
 <div id="serverIDInput">

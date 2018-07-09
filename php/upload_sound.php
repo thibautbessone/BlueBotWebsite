@@ -7,16 +7,20 @@
 $name =  filter_var($_POST['desired_name'], FILTER_SANITIZE_STRING);
 $serverId = filter_var($_POST['server_id'], FILTER_SANITIZE_NUMBER_INT);
 $MAX_SIZE = 500000; //Max size of the file
-$UPLOAD_DIR = '/home/bluebot/soundboard/';
+$MAX_FILE_NUMBER = 31;//Max number of sounds per server +1 cause scandir is done before the actual upload
+$UPLOAD_DIR = '/data/bluebot/soundboard/';
+//$UPLOAD_DIR = 'soundboard/'; //testing
 if (!is_dir($UPLOAD_DIR . "/" . $serverId . "/")) {
     mkdir($UPLOAD_DIR . "/" . $serverId, 0755);
 }
 $target_file = $UPLOAD_DIR . "/" . $serverId . "/" . $name . ".mp3";
+$serverDirectory = $UPLOAD_DIR . "/" . $serverId;
+$fileCount = count(scandir($serverDirectory)) -1;
 
 //Return object
 $obj = new stdClass();
 $obj->success = true;
-$obj->message = 'Your sound has been uploaded.';
+$obj->message = 'Your sound has been uploaded. File count : ' . $fileCount;
 $obj->name = $name;
 
 if($_FILES['new_sound']['error'] > 0) {
@@ -67,6 +71,11 @@ if($_FILES['new_sound']['error'] > 0) {
         $obj->success = false;
         $obj->message = 'Please check the box';
     }
+    else if($fileCount >= $MAX_FILE_NUMBER) {
+        $obj->success = false;
+        $obj->message = 'Max number of sound already reached (' . ($fileCount-1) . ')'; //-1 cause +1 before
+    }
+
     else {
         //All conditions are met
         move_uploaded_file($_FILES["new_sound"]['tmp_name'], $target_file);

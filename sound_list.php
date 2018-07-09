@@ -6,7 +6,7 @@
 
 include 'views/header.html';
 session_start();
-$directory = "/home/bluebot/soundboard";
+$directory = "/data/bluebot/soundboard";
 if(isset($_GET['desiredServer'])) {
     $directory = $directory . "/" . $_GET['desiredServer'];
 }

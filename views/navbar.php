@@ -13,6 +13,14 @@ Version : 0.2
             <li class="commands"><a>Commands</a></li>
             <li class="soundlist"><a href="./sound_list.php">Sound list</a></li>
             <li><a href="#sound_modal"><i class="material-icons left">add</i>Add a sound</a></li>
+            <?php
+                if(!isset($_SESSION['userID'])) {
+                    echo "<li><a href=\"php/oauth/login.php\"><i class=\"material-icons left\">account_circle</i>Login with Discord</a></li>";
+                } else {
+                    echo "<li id=\"user\"><img id=\"userAvatar\" src=\"" . $_SESSION['avatar'] . "\">" . $_SESSION['username'] . "#" . $_SESSION['discrim'] . "</li>";
+                    echo "<li><a href=\"php/oauth/logout.php\"><i class=\"material-icons left\">highlight_off</i>Logout</a></li>";
+                }
+            ?>
         </ul>
 
         <ul id="nav-mobile" class="light side-nav blue darken-2">

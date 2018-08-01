@@ -1,15 +1,20 @@
 <?php
 /**
  * Author: Blue
- * Version : 0.1
+ * Version : 0.2
  */
+
+session_start();
 
 $name =  filter_var($_POST['desired_name'], FILTER_SANITIZE_STRING);
 $serverId = filter_var($_POST['server_id'], FILTER_SANITIZE_NUMBER_INT);
 $MAX_SIZE = 500000; //Max size of the file
 $MAX_FILE_NUMBER = 31;//Max number of sounds per server +1 cause scandir is done before the actual upload
-$UPLOAD_DIR = '/data/bluebot/soundboard/';
-//$UPLOAD_DIR = 'soundboard/'; //testing
+if(isset($_SESSION['addSoundAmount']) && $_SESSION['addSoundAmount'] != "402" ) {//default value
+    $MAX_FILE_NUMBER += intval($_SESSION['addSoundAmount'], 10);
+}
+//$UPLOAD_DIR = '/data/bluebot/soundboard/';
+$UPLOAD_DIR = 'soundboard/'; //testing
 if (!is_dir($UPLOAD_DIR . "/" . $serverId . "/")) {
     mkdir($UPLOAD_DIR . "/" . $serverId, 0755);
 }
@@ -20,7 +25,7 @@ $fileCount = count(scandir($serverDirectory)) -1;
 //Return object
 $obj = new stdClass();
 $obj->success = true;
-$obj->message = 'Your sound has been uploaded. File count : ' . $fileCount;
+$obj->message = 'Your sound has been uploaded. Uploads left : ' . (($MAX_FILE_NUMBER -1) - $fileCount) ;
 $obj->name = $name;
 
 if($_FILES['new_sound']['error'] > 0) {
@@ -81,5 +86,4 @@ if($_FILES['new_sound']['error'] > 0) {
         move_uploaded_file($_FILES["new_sound"]['tmp_name'], $target_file);
     }
 }
-
 echo json_encode($obj);

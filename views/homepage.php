@@ -47,7 +47,7 @@ Version : 0.3
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">volume_up</i></h2>
                         <h5 class="center">Customizable soundboard</h5>
-                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only, 30 sounds).</p>
+                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only, 30 free sounds).</p>
                         <!--<p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. However, you temporarily (at least I hope so) can't upload your own sounds anymore. Join the support server for more info.</p>-->
                     </div>
                     <div class="icon-block blueCard">

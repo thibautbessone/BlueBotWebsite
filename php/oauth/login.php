@@ -93,6 +93,6 @@ if (!isset($_GET['code'])) {
         exit('Failed to get user details. Try again later.');
     }
 
-    header('Location: http://bluebot.pw');
+    header('Location: https://bluebot.pw');
     //header('Location: http://localhost/bluebot/');
 }

@@ -42,7 +42,11 @@ $scanned_directory = @array_filter(@scandir($directory), function($file) {
         <?php
         if(is_array($scanned_directory)) {
             foreach ($scanned_directory as $key => $value) {
-                echo '<li class="collection-item item"><div>' . $value . '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a></div></li>';
+                if(isset($_GET['desiredServer'])) {
+                    echo '<li class="collection-item item"><div>' . $value . '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a></div></li>';
+                } else {
+                    echo '<li class="collection-item item"><div>' . $value . '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a></div></li>';
+                }
             }
         } else {
             echo '<p style="text-align: center">If there is no sound listed, make sure that you uploaded at least one or that you provided the right server ID.</p>';

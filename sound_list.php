@@ -10,6 +10,7 @@ $directory = "/data/bluebot/soundboard";
 $aliasDirectory = "/sounds";
 if(isset($_GET['desiredServer'])) {
     $directory = $directory . "/" . $_GET['desiredServer'];
+    $aliasDirectory = $aliasDirectory . "/" . $_GET['desiredServer'];
 }
 
 //COMMENT THE @ for invalid path warnings

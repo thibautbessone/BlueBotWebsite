@@ -6,7 +6,7 @@
 
 include 'views/header.html';
 session_start();
-$directory = "/data/bluebot/soundboard";
+$directory = "/sounds"; // Alias in Apache2
 if(isset($_GET['desiredServer'])) {
     $directory = $directory . "/" . $_GET['desiredServer'];
 }

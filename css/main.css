@@ -189,7 +189,7 @@ td {
     border-bottom: 1px solid #24292e !important;
 }
 
-.material-icons {
+.slIcons {
     transition: 0.2s;
     color : #1976D2 !important;
     cursor: pointer;

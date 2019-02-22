@@ -47,12 +47,12 @@ $scanned_directory = @array_filter(@scandir($directory), function($file) {
             foreach ($scanned_directory as $key => $value) {
                 echo '<li class="collection-item item"><div>' . $value . '<audio preload="none" id="' . $value . '" src="' . $aliasDirectory . '/' . $value . '"></audio>';
                 if(isset($_GET['desiredServer'])) {
-                    echo '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a>';
+                    echo '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="slIcons material-icons">file_download</i></a>';
                 } else {
-                    echo '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i id="dlIcon" class="material-icons">file_download</i></a>';
+                    echo '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i id="dlIcon" class="slIcons material-icons">file_download</i></a>';
                 }
                 echo '<div class="secondary-content">
-                    <i id="soundIcon" onclick="document.getElementById(\'' . $value . '\').play()"  class="material-icons">volume_up</i>
+                    <i id="soundIcon" onclick="document.getElementById(\'' . $value . '\').play()"  class="slIcons material-icons">volume_up</i>
                 </div></div></li>';
             }
         } else {

@@ -9,7 +9,7 @@ session_start();
 $name =  filter_var($_POST['desired_name'], FILTER_SANITIZE_STRING);
 $serverId = filter_var($_POST['server_id'], FILTER_SANITIZE_NUMBER_INT);
 $MAX_SIZE = 500000; //Max size of the file
-$MAX_FILE_NUMBER = 31;//Max number of sounds per server +1 cause scandir is done before the actual upload
+$MAX_FILE_NUMBER = 76;//Max number of sounds per server +1 cause scandir is done before the actual upload
 if(isset($_SESSION['addSoundAmount']) && $_SESSION['addSoundAmount'] != "402" ) {//default value
     $MAX_FILE_NUMBER += intval($_SESSION['addSoundAmount'], 10);
 }

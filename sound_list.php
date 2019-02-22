@@ -6,7 +6,8 @@
 
 include 'views/header.html';
 session_start();
-$directory = "/sounds"; // Alias in Apache2
+$directory = "/data/bluebot/soundboard";
+$aliasDirectory = "/sounds";
 if(isset($_GET['desiredServer'])) {
     $directory = $directory . "/" . $_GET['desiredServer'];
 }
@@ -43,7 +44,7 @@ $scanned_directory = @array_filter(@scandir($directory), function($file) {
         <?php
         if(is_array($scanned_directory)) {
             foreach ($scanned_directory as $key => $value) {
-                echo '<li class="collection-item item"><div>' . $value . '<audio id="' . $value . '" src="' . $directory . '/' . $value . '"></audio>';
+                echo '<li class="collection-item item"><div>' . $value . '<audio id="' . $value . '" src="' . $aliasDirectory . '/' . $value . '"></audio>';
                 if(isset($_GET['desiredServer'])) {
                     echo '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a>';
                 } else {

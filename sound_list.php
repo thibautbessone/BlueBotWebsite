@@ -19,6 +19,7 @@ $scanned_directory = @array_filter(@scandir($directory), function($file) {
 });
 @sort($scanned_directory, SORT_STRING | SORT_FLAG_CASE);
 ?>
+
 <div id="serverIDInput">
     <div class="row">
         <div class="col s12">
@@ -42,11 +43,15 @@ $scanned_directory = @array_filter(@scandir($directory), function($file) {
         <?php
         if(is_array($scanned_directory)) {
             foreach ($scanned_directory as $key => $value) {
+                echo '<li class="collection-item item"><div>' . $value . '<audio id="' . $value . '" src="' . $directory . '/' . $value . '"></audio>';
                 if(isset($_GET['desiredServer'])) {
-                    echo '<li class="collection-item item"><div>' . $value . '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a></div></li>';
+                    echo '<a href="php/download_sound.php?sound=' . $value . '&desiredServer=' . $_GET['desiredServer'] . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a>';
                 } else {
-                    echo '<li class="collection-item item"><div>' . $value . '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i  id="dlIcon" class="material-icons">file_download</i></a></div></li>';
+                    echo '<a href="php/download_sound.php?sound=' . $value . '"  class="secondary-content"><i id="dlIcon" class="material-icons">file_download</i></a>';
                 }
+                echo '<div class="secondary-content">
+                    <i id="soundIcon" onclick="document.getElementById(\'' . $value . '\').play()"  class="material-icons">volume_up</i>
+                </div></div></li>';
             }
         } else {
             echo '<p style="text-align: center">If there is no sound listed, make sure that you uploaded at least one or that you provided the right server ID.</p>';

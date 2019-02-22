@@ -189,8 +189,16 @@ td {
     border-bottom: 1px solid #24292e !important;
 }
 
-#dlIcon {
+.material-icons {
+    transition: 0.2s;
     color : #1976D2 !important;
+    cursor: pointer;
+}
+
+.material-icons:hover {
+    transition: 0.2s;
+    border-radius: 25%;
+    color: whitesmoke !important;
 }
 
 #user {

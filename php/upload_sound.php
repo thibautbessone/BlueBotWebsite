@@ -47,6 +47,11 @@ if($_FILES['new_sound']['error'] > 0) {
         $obj->message = 'No name given';
     }
 
+    else if(strcmp($name, "help") == 0) {
+        $obj->success = false;
+        $obj->message = 'Naming the sound \'help\' will cause issues. Choose another name';
+    }
+
     else if(strlen($name) > 15) {
         $obj->success = false;
         $obj->message = 'Name too long';

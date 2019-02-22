@@ -195,7 +195,7 @@ td {
     cursor: pointer;
 }
 
-.material-icons:hover {
+.slIcons:hover {
     transition: 0.2s;
     border-radius: 25%;
     color: whitesmoke !important;

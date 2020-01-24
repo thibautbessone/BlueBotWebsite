@@ -9,7 +9,7 @@ Version : 0.3
             <div class="container">
                 <h1 class="header center blue-text text-darken-2">BlueBot</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">A general purpose bot for your Discord server</h5>
+                    <h5 class="header col s12 light">A soundboard & general purpose bot for your Discord server</h5>
                 </div>
                 <div class="buttons row center">
                     <a href="https://discordapp.com/oauth2/authorize?client_id=268420199370194944&scope=bot&permissions=-1" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="left" data-delay="1" data-tooltip="Add the bot to your server"><i class="material-icons left">play_for_work</i>Add BlueBot</a>
@@ -18,10 +18,8 @@ Version : 0.3
                 </div>
                 <div class="row center">
                     <div class="col s12">
-                        <h5 class="light">Developed by <a id="devlink" target="_blank" href="https://dev.bluebot.pw">Blue#1377</a></h5>
+                        <h5 class="light">Developed by <a id="devlink" target="_blank" href="https://blure.xyz/">_blure#0001</a></h5>
                         <h5 class="light">using the <a id="jdaLink" target="_blank" href="https://github.com/DV8FromTheWorld/JDA">JDA Library</a></h5>
-                        <a target="_blank" href="https://dev.bluebot.pw"><img id="blueAvatar" src="img/icon.png" alt="Blue#1377"></a>
-                        <a target="_blank" href="https://www.patreon.com/bluebot"><img id="patreon" src="img/patreon.png" alt="Support me on Patreon !"></a>
                     </div>
                 </div>
             </div>
@@ -47,7 +45,7 @@ Version : 0.3
                     <div class="icon-block blueCard">
                         <h2 class="center blue-text text-darken-2"><i class="material-icons">volume_up</i></h2>
                         <h5 class="center">Customizable soundboard</h5>
-                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only, 30 free sounds).</p>
+                        <p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. Otherwise, you can upload your own sound by clicking the button at the top right corner (PC only, 75 free sounds).</p>
                         <!--<p class="light">BlueBot was originally made to be run as a standalone by its users. By running the bot yourself, you will be able to add your own sounds to the soundboard. However, you temporarily (at least I hope so) can't upload your own sounds anymore. Join the support server for more info.</p>-->
                     </div>
                     <div class="icon-block blueCard">

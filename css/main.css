@@ -204,6 +204,16 @@ td {
     pointer-events: none;
 }
 
+#userAvatar {
+    max-width: 30px;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translate3d(0px, 10px, 0px);
+}
+
 .parallax-container {
     height: 450px !important;
 }

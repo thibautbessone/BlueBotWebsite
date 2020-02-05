@@ -83,7 +83,7 @@ td {
 #parallaxBg {
     display: block;
     transform: translate3d(-50%, 185px, 0px);
-    filter: brightness(55%);
+    filter: brightness(45%);
 }
 
 #twitchIcon {
@@ -215,5 +215,5 @@ td {
 }
 
 .parallax-container {
-    height: 450px !important;
+    max-height: 450px;
 }

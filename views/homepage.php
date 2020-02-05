@@ -13,8 +13,9 @@ Version : 0.3
                 </div>
                 <div class="buttons row center">
                     <a href="https://discordapp.com/oauth2/authorize?client_id=268420199370194944&scope=bot&permissions=-1" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="left" data-delay="1" data-tooltip="Add the bot to your server"><i class="material-icons left">play_for_work</i>Add BlueBot</a>
-                    <a target="_blank" href="https://github.com/thibautbessone/DiscordBlueBot" class="btn-large waves-effect waves-light blue darken-2"><i class="material-icons left">code</i>GitHub</a>
-                    <a href="https://discord.gg/rSekkJv" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="right" data-delay="1" data-tooltip="Join the support server"><i class="material-icons left">forum</i>BlueBot server</a>
+                    <a target="_blank" href="https://github.com/thibautbessone/DiscordBlueBot" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="top" data-delay="1" data-tooltip="Source code"><i class="material-icons left">code</i>GitHub</a>
+                    <a href="https://discord.gg/rSekkJv" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="top" data-delay="1" data-tooltip="Join the support server"><i class="material-icons left">live_help</i>Support</a>
+                    <a target="_blank" href="https://discordservers.me/" class="tooltipped btn-large waves-effect waves-light blue darken-2" data-position="right" data-delay="1" data-tooltip="Our partner"><i class="material-icons left">format_list_bulleted</i>Discord Servers</a>
                 </div>
                 <div class="row center">
                     <div class="col s12">

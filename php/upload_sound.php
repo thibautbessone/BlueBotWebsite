@@ -13,7 +13,7 @@ $MAX_FILE_NUMBER = 76;//Max number of sounds per server +1 cause scandir is done
 if(isset($_SESSION['addSoundAmount']) && $_SESSION['addSoundAmount'] != "402" ) {//default value
     $MAX_FILE_NUMBER += intval($_SESSION['addSoundAmount'], 10);
 }
-$UPLOAD_DIR = '/data/bluebot/soundboard/';
+$UPLOAD_DIR = '/home/bluebot/soundboard/';
 //$UPLOAD_DIR = 'soundboard/'; //testing
 if (!is_dir($UPLOAD_DIR . "/" . $serverId . "/")) {
     mkdir($UPLOAD_DIR . "/" . $serverId, 0755);

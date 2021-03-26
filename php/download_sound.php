@@ -5,9 +5,9 @@
  */
 session_start();
 if($_GET['desiredServer']) {
-    $path = "/data/bluebot/soundboard/" . $_GET['desiredServer'] . "/";
+    $path = "/home/bluebot/soundboard/" . $_GET['desiredServer'] . "/";
 } else {
-    $path = "/data/bluebot/soundboard/";
+    $path = "/home/bluebot/soundboard/";
 }
 $soundName= $_GET['sound'];
 
